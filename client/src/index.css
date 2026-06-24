@@ -108,7 +108,7 @@ select:-webkit-autofill:focus {
 }
 
 .dark {
-    --background: oklch(21% 0.034 264.665);
+    --background: #151515;
     --foreground: oklch(0.985 0 0);
     --card: oklch(0.205 0 0);
     --card-foreground: oklch(0.985 0 0);

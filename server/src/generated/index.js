@@ -213,7 +213,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/mnt/d/Md_Mahir_Asef/robobazar/server/src/generated",
+      "value": "/app/src/generated",
       "fromEnvVar": null
     },
     "config": {
@@ -227,11 +227,11 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/mnt/d/Md_Mahir_Asef/robobazar/server/prisma/schema.prisma",
+    "sourceFilePath": "/app/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../.env",
+    "rootEnvPath": null,
     "schemaEnvPath": "../../.env"
   },
   "relativePath": "../../prisma",
@@ -241,7 +241,6 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
-  "postinstall": true,
   "inlineDatasources": {
     "db": {
       "url": {

@@ -44,7 +44,7 @@ export default function ProductList() {
 
     if (loading) {
         return (
-            <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-2 sm:p-3 md:p-4 flex flex-col">
+            <div className="min-h-screen bg-gray-50 dark:bg-[#151515] p-2 sm:p-3 md:p-4 flex flex-col">
                 <div className="max-w-7xl xl:max-w-7xl mx-auto grow">
                     <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 md:mb-8">
                         Products
@@ -99,7 +99,7 @@ export default function ProductList() {
 
     if (categories.length === 0) {
         return (
-            <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-2 sm:p-3 md:p-4 flex flex-col">
+            <div className="min-h-screen bg-gray-50 dark:bg-[#151515] p-2 sm:p-3 md:p-4 flex flex-col">
                 <div className="max-w-7xl xl:max-w-7xl mx-auto grow">
                     <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 md:mb-8">
                         Products
@@ -117,7 +117,7 @@ export default function ProductList() {
 
     return (
         <>
-            <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-2 sm:p-3 md:p-4 flex flex-col">
+            <div className="min-h-screen bg-gray-50 dark:bg-[#151515] p-2 sm:p-3 md:p-4 flex flex-col">
                 <div className="max-w-7xl xl:max-w-7xl mx-auto grow">
                     <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 md:mb-8">
                         Products
