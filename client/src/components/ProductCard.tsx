@@ -35,9 +35,9 @@ export default function ProductCard({ product }: ProductCardProps) {
 
     return (
         <Link to={`/product/${product.id}`} className="block group">
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden h-full flex flex-col">
+            <div className="bg-slate-900 border border-slate-700 rounded-lg shadow-lg shadow-black/40 hover:shadow-xl transition-shadow duration-200 overflow-hidden h-full flex flex-col">
                 {/* Product Image - Fixed aspect square */}
-                <div className="aspect-square overflow-hidden bg-gray-100 dark:bg-gray-700 shrink-0">
+                <div className="aspect-square overflow-hidden bg-slate-800 shrink-0">
                     {product.images.length > 0 ? (
                         <img
                             src={product.images[0]}
@@ -48,7 +48,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                             }}
                         />
                     ) : (
-                        <div className="w-full h-full flex items-center justify-center text-gray-400 dark:text-gray-500">
+                        <div className="w-full h-full flex items-center justify-center text-slate-400">
                             <span className="text-xs sm:text-sm">No Image</span>
                         </div>
                     )}
@@ -58,7 +58,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                 <div className="p-2 sm:p-3 md:p-4 flex-1 flex flex-col min-h-0">
                     {/* Title Section - Fixed height with line clamp */}
                     <div className="h-8 sm:h-10 md:h-12 mb-1 sm:mb-2">
-                        <h3 className="font-medium text-gray-900 dark:text-white text-xs sm:text-sm line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors overflow-hidden h-full truncate">
+                        <h3 className="font-medium text-white text-xs sm:text-sm line-clamp-2 group-hover:text-amber-300 transition-colors overflow-hidden h-full truncate">
                             {product.name}
                         </h3>
                     </div>
@@ -70,14 +70,14 @@ export default function ProductCard({ product }: ProductCardProps) {
 
                     {/* Price Section - Fixed height, pushes to bottom */}
                     <div className="mt-auto flex items-center gap-1 sm:gap-2">
-                        <span className="text-sm sm:text-base md:text-lg font-bold text-gray-900 dark:text-white">
+                        <span className="text-sm sm:text-base md:text-lg font-bold text-white">
                             {formatPrice(
                                 product.discountPrice || product.price,
                             )}
                         </span>
                         {product.discountPrice &&
                             product.discountPrice !== product.price && (
-                                <span className="text-xs sm:text-sm text-gray-500 line-through">
+                                <span className="text-xs sm:text-sm text-slate-400 line-through">
                                     {formatPrice(product.price)}
                                 </span>
                             )}

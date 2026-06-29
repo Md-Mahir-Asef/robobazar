@@ -33,7 +33,7 @@ export default function SearchBar() {
         <>
             {/*Search Bar on Desktop (Search Bar on Mobile is in /src/components/UtilMenu.tsx)*/}
             <form onSubmit={handleSearch}>
-                <div className="border-2 border-[#BCE3C9] rounded-sm p-2 px-2 sm:p-2 sm:px-3 ml-1 sm:ml-3 flex-1 flex-row dark:bg-gray-900 hidden lg:flex lg:flex-1">
+                <div className="border-2 border-amber-300 rounded-sm p-2 px-2 sm:p-2 sm:px-3 ml-1 sm:ml-3 flex-1 flex-row dark:bg-gray-900 hidden lg:flex lg:flex-1">
                     <CategoryDropDownMenu
                         categories={categories}
                         width={175}
