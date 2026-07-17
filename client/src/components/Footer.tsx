@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Github, Linkedin, X, Laptop } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-950 border-t border-slate-800 mt-8 sm:mt-12 lg:mt-20">
+        <footer className="bg-white dark:bg-slate-950 border-t border-gray-200 dark:border-slate-800 mt-8 sm:mt-12 lg:mt-20">
             <div className="max-w-7xl xl:max-w-7xl 2xl:max-w-full-2xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-10 lg:py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                     {/* Company Info */}
@@ -20,7 +20,7 @@ export default function Footer() {
                                 Robobazar
                             </h3>
                         </div>
-                        <p className="text-xs sm:text-sm text-slate-300 mb-3 sm:mb-4 max-w-xs sm:max-w-md">
+                        <p className="text-xs sm:text-sm text-gray-600 dark:text-slate-300 mb-3 sm:mb-4 max-w-xs sm:max-w-md">
                             Your trusted online marketplace for quality
                             products. We bring the best shopping experience
                             right to your doorstep.
@@ -51,7 +51,7 @@ export default function Footer() {
                     </div>
                     {/* Quick Links */}
                     <div>
-                        <h4 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">
+                        <h4 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
                             Quick Links
                         </h4>
                         <ul className="space-y-2">
@@ -91,7 +91,7 @@ export default function Footer() {
                     </div>
                     {/* Contact Info */}
                     <div>
-                        <h4 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">
+                        <h4 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
                             Contact Info
                         </h4>
                         <div className="space-y-2 sm:space-y-3">
@@ -131,7 +131,7 @@ export default function Footer() {
                                     +8801832055053
                                 </a>
                             </div>
-                            <div className="flex items-start text-slate-300">
+                            <div className="flex items-start text-gray-600 dark:text-slate-300">
                                 <MapPin
                                     size={14}
                                     className="mr-2 text-amber-300 mt-0.5"
@@ -152,7 +152,7 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="border-t border-slate-800 mt-6 sm:mt-8 pt-6 sm:pt-8">
                     <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-                        <p className="text-slate-400 text-xs sm:text-sm">
+                        <p className="text-gray-500 dark:text-slate-400 text-xs sm:text-sm">
                             © 2026 Robobazar. All rights reserved.
                         </p>
                         <div className="flex flex-wrap gap-4 sm:gap-6 text-xs sm:text-sm">

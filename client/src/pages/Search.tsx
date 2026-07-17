@@ -155,10 +155,10 @@ export default function Search() {
             return (
                 <div className="text-center py-12">
                     <SearchIcon className="mx-auto h-12 w-12 text-amber-300 mb-4" />
-                    <h2 className="text-2xl font-semibold text-white mb-2">
+                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
                         All Products
                     </h2>
-                    <p className="text-slate-300"></p>
+                    <p className="text-gray-600 dark:text-slate-300"></p>
                 </div>
             );
         }
@@ -167,13 +167,13 @@ export default function Search() {
             return (
                 <div className="text-center py-12">
                     <SearchIcon className="mx-auto h-12 w-12 text-amber-300 mb-4" />
-                    <h2 className="text-2xl font-semibold text-white mb-2">
+                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
                         No products found
                     </h2>
-                    <p className="text-slate-300">
+                    <p className="text-gray-600 dark:text-slate-300">
                         No products found in "{category}" category
                     </p>
-                    <p className="text-slate-400 text-sm mt-2"></p>
+                    <p className="text-gray-500 dark:text-slate-400 text-sm mt-2"></p>
                 </div>
             );
         }
@@ -182,16 +182,16 @@ export default function Search() {
             <>
                 <div className="text-center py-12">
                     <SearchIcon className="mx-auto h-12 w-12 text-amber-300 mb-4" />
-                    <h2 className="text-2xl font-semibold text-white mb-2">
+                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
                         No products found
                     </h2>
-                    <p className="text-slate-300">
+                    <p className="text-gray-600 dark:text-slate-300">
                         No products found for "{query}"
                         {category !== "All Categories" && (
                             <span> in "{category}" category</span>
                         )}
                     </p>
-                    <p className="text-slate-400 text-sm mt-2">
+                    <p className="text-gray-500 dark:text-slate-400 text-sm mt-2">
                         Try different keywords or browse categories
                     </p>
                 </div>
@@ -204,10 +204,10 @@ export default function Search() {
             <div className="text-red-500 mb-4">
                 <SearchIcon className="mx-auto h-12 w-12 text-red-500" />
             </div>
-            <h2 className="text-2xl font-semibold text-white mb-2">
+            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
                 Search failed
             </h2>
-            <p className="text-slate-300 mb-4">{error}</p>
+            <p className="text-gray-600 dark:text-slate-300 mb-4">{error}</p>
             <Button onClick={() => window.location.reload()}>Try again</Button>
         </div>
     );
@@ -215,10 +215,10 @@ export default function Search() {
     return (
         <>
             <Header />
-            <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 w-full bg-slate-950 text-slate-100">
+            <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 w-full bg-white dark:bg-slate-950 text-gray-900 dark:text-slate-100">
                 {/* Search Header */}
                 <div className="mb-6 sm:mb-8">
-                    <h1 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">
+                    <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
                         Search Products
                     </h1>
 
@@ -256,7 +256,7 @@ export default function Search() {
                         <div className="flex items-center gap-2">
                             <label
                                 htmlFor="sort"
-                                className="text-sm font-medium text-slate-100"
+                                className="text-sm font-medium text-gray-700 dark:text-slate-100"
                             >
                                 Sort by:
                             </label>
@@ -297,7 +297,7 @@ export default function Search() {
                         <div className="flex items-center gap-2">
                             <label
                                 htmlFor="limit"
-                                className="text-sm font-medium text-slate-100"
+                                className="text-sm font-medium text-gray-700 dark:text-slate-100"
                             >
                                 Show:
                             </label>
@@ -332,7 +332,7 @@ export default function Search() {
                         </div>
 
                         {(query || category !== "All Categories") && (
-                            <div className="text-sm text-slate-300">
+                            <div className="text-sm text-gray-500 dark:text-slate-300">
                                 {totalItems}{" "}
                                 {totalItems === 1 ? "product" : "products"}{" "}
                                 found

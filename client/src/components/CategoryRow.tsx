@@ -68,15 +68,15 @@ export default function CategoryRow({
     if (loading && products.length === 0) {
         return (
             <div className="mb-6 sm:mb-8">
-                <h2 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">
+                <h2 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
                     {categoryName}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-2 sm:gap-3 md:gap-4">
                     {[...Array(4)].map((_, index) => (
                         <div key={index} className="animate-pulse">
-                            <div className="bg-slate-800 rounded-lg aspect-square mb-2"></div>
-                            <div className="h-3 sm:h-4 bg-slate-800 rounded mb-2"></div>
-                            <div className="h-3 sm:h-4 bg-slate-800 rounded w-3/4"></div>
+                            <div className="bg-gray-200 dark:bg-slate-800 rounded-lg aspect-square mb-2"></div>
+                            <div className="h-3 sm:h-4 bg-gray-200 dark:bg-slate-800 rounded mb-2"></div>
+                            <div className="h-3 sm:h-4 bg-gray-200 dark:bg-slate-800 rounded w-3/4"></div>
                         </div>
                     ))}
                 </div>
@@ -109,7 +109,7 @@ export default function CategoryRow({
                                     <button
                                         onClick={loadMore}
                                         disabled={loading}
-                                        className="w-full bg-slate-900 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex flex-col items-center justify-center group border-2 border-dashed border-slate-700 hover:border-amber-300"
+                                        className="w-full bg-white dark:bg-slate-900 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex flex-col items-center justify-center group border-2 border-dashed border-gray-300 dark:border-slate-700 hover:border-amber-300"
                                         style={{ height: "30vh" }}
                                     >
                                         {loading ? (
@@ -120,7 +120,7 @@ export default function CategoryRow({
                                                 </span>
                                             </div>
                                         ) : (
-                                            <div className="flex flex-col items-center gap-2 text-slate-300 group-hover:text-amber-300 transition-colors">
+                                            <div className="flex flex-col items-center gap-2 text-gray-600 dark:text-slate-300 group-hover:text-amber-300 transition-colors">
                                                 <span className="text-xs font-medium">
                                                     Load More
                                                 </span>
@@ -142,12 +142,12 @@ export default function CategoryRow({
                         {showLeftArrow && (
                             <button
                                 onClick={scrollLeft}
-                                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-slate-900 rounded-full shadow-lg p-2 sm:p-2.5 hover:bg-slate-800 transition-colors w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center"
+                                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-900 rounded-full shadow-lg p-2 sm:p-2.5 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center"
                                 aria-label="Scroll left"
                             >
                                 <ChevronLeft
                                     size={16}
-                                    className="text-slate-300 sm:w-4 sm:h-4"
+                                    className="text-gray-600 dark:text-slate-300 sm:w-4 sm:h-4"
                                 />
                             </button>
                         )}
@@ -156,12 +156,12 @@ export default function CategoryRow({
                         {showRightArrow && (
                             <button
                                 onClick={scrollRight}
-                                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-slate-900 rounded-full shadow-lg p-2 sm:p-2.5 hover:bg-slate-800 transition-colors w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center"
+                                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-900 rounded-full shadow-lg p-2 sm:p-2.5 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center"
                                 aria-label="Scroll right"
                             >
                                 <ChevronRight
                                     size={16}
-                                    className="text-slate-300 sm:w-4 sm:h-4"
+                                    className="text-gray-600 dark:text-slate-300 sm:w-4 sm:h-4"
                                 />
                             </button>
                         )}
@@ -185,7 +185,7 @@ export default function CategoryRow({
                                     <button
                                         onClick={loadMore}
                                         disabled={loading}
-                                        className="w-32 sm:w-36 md:w-40 lg:w-44 xl:w-52 2xl:w-60 bg-slate-900 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex flex-col items-center justify-center text-center group border-2 border-dashed border-slate-700 hover:border-amber-300"
+                                        className="w-32 sm:w-36 md:w-40 lg:w-44 xl:w-52 2xl:w-60 bg-white dark:bg-slate-900 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex flex-col items-center justify-center text-center group border-2 border-dashed border-gray-300 dark:border-slate-700 hover:border-amber-300"
                                         style={{ minHeight: "300px" }}
                                     >
                                         {loading ? (
@@ -196,7 +196,7 @@ export default function CategoryRow({
                                                 </span>
                                             </div>
                                         ) : (
-                                            <div className="flex flex-col items-center gap-2 text-slate-300 group-hover:text-amber-300 transition-colors">
+                                            <div className="flex flex-col items-center gap-2 text-gray-600 dark:text-slate-300 group-hover:text-amber-300 transition-colors">
                                                 <span className="text-xs sm:text-sm font-medium">
                                                     Load More
                                                 </span>

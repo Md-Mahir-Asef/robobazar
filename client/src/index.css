@@ -74,37 +74,37 @@ select:-webkit-autofill:focus {
 
 :root {
     --radius: 0.625rem;
-    --background: #080809;
-    --foreground: #f7f7f9;
-    --card: #10101a;
-    --card-foreground: #f7f7f9;
-    --popover: #0f0f16;
-    --popover-foreground: #f7f7f9;
+    --background: #f8fafc;
+    --foreground: #0f172a;
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+    --popover: #f8fafc;
+    --popover-foreground: #0f172a;
     --primary: #ffd600;
-    --primary-foreground: #0f0f16;
-    --secondary: #13131b;
-    --secondary-foreground: #e5e7eb;
-    --muted: #1d1d28;
-    --muted-foreground: #9ca3af;
+    --primary-foreground: #0f172a;
+    --secondary: #e2e8f0;
+    --secondary-foreground: #0f172a;
+    --muted: #e2e8f0;
+    --muted-foreground: #64748b;
     --accent: #ffd600;
-    --accent-foreground: #0f0f16;
-    --destructive: #ff4d4d;
-    --border: #27282f;
-    --input: #14141d;
-    --ring: #ffd600;
+    --accent-foreground: #0f172a;
+    --destructive: #ef4444;
+    --border: #e2e8f0;
+    --input: #f8fafc;
+    --ring: #facc15;
     --chart-1: #ffd600;
     --chart-2: #f5c500;
     --chart-3: #f7de4f;
     --chart-4: #ffe89a;
     --chart-5: #fff2b2;
-    --sidebar: #11111a;
-    --sidebar-foreground: #f7f7f9;
+    --sidebar: #ffffff;
+    --sidebar-foreground: #0f172a;
     --sidebar-primary: #ffd600;
-    --sidebar-primary-foreground: #0f0f16;
+    --sidebar-primary-foreground: #0f172a;
     --sidebar-accent: #ffd600;
-    --sidebar-accent-foreground: #0f0f16;
-    --sidebar-border: #27282f;
-    --sidebar-ring: #ffd600;
+    --sidebar-accent-foreground: #0f172a;
+    --sidebar-border: #e2e8f0;
+    --sidebar-ring: #facc15;
 }
 
 .dark {

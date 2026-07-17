@@ -44,25 +44,25 @@ export default function ProductList() {
 
     if (loading) {
         return (
-            <div className="min-h-screen bg-slate-950 p-2 sm:p-3 md:p-4 flex flex-col">
+            <div className="min-h-screen bg-white dark:bg-slate-950 p-2 sm:p-3 md:p-4 flex flex-col">
                 <div className="max-w-7xl xl:max-w-7xl mx-auto grow">
-                    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 sm:mb-6 md:mb-8">
+                    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 md:mb-8">
                         Products
                     </h1>
 
                     {/* Category Skeletons */}
                     {[...Array(3)].map((_, index) => (
                         <div key={index} className="mb-8">
-                            <div className="h-6 sm:h-7 md:h-8 bg-slate-800 rounded mb-3 sm:mb-4 w-32 sm:w-40 md:w-48 animate-pulse"></div>
+                            <div className="h-6 sm:h-7 md:h-8 bg-gray-200 dark:bg-slate-800 rounded mb-3 sm:mb-4 w-32 sm:w-40 md:w-48 animate-pulse"></div>
                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
                                 {[...Array(4)].map((_, cardIndex) => (
                                     <div
                                         key={cardIndex}
                                         className="animate-pulse"
                                     >
-                                        <div className="bg-slate-800 rounded-lg aspect-square mb-2"></div>
-                                        <div className="h-4 bg-slate-800 rounded mb-2"></div>
-                                        <div className="h-4 bg-slate-800 rounded w-3/4"></div>
+                                        <div className="bg-gray-200 dark:bg-slate-800 rounded-lg aspect-square mb-2"></div>
+                                        <div className="h-4 bg-gray-200 dark:bg-slate-800 rounded mb-2"></div>
+                                        <div className="h-4 bg-gray-200 dark:bg-slate-800 rounded w-3/4"></div>
                                     </div>
                                 ))}
                             </div>
@@ -75,9 +75,9 @@ export default function ProductList() {
 
     if (error) {
         return (
-            <div className="min-h-screen bg-slate-950 p-2 sm:p-3 md:p-4 flex flex-col">
+            <div className="min-h-screen bg-white dark:bg-slate-950 p-2 sm:p-3 md:p-4 flex flex-col">
                 <div className="max-w-7xl xl:max-w-7xl mx-auto grow">
-                    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 sm:mb-6 md:mb-8">
+                    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 md:mb-8">
                         Products
                     </h1>
 
@@ -99,14 +99,14 @@ export default function ProductList() {
 
     if (categories.length === 0) {
         return (
-            <div className="min-h-screen bg-slate-950 p-2 sm:p-3 md:p-4 flex flex-col">
+            <div className="min-h-screen bg-white dark:bg-slate-950 p-2 sm:p-3 md:p-4 flex flex-col">
                 <div className="max-w-7xl xl:max-w-7xl mx-auto grow">
-                    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 sm:mb-6 md:mb-8">
+                    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 md:mb-8">
                         Products
                     </h1>
 
                     <div className="text-center py-8 sm:py-12 md:py-16">
-                        <div className="text-slate-400 text-sm sm:text-base md:text-xl">
+                        <div className="text-gray-600 dark:text-slate-400 text-sm sm:text-base md:text-xl">
                             No categories available
                         </div>
                     </div>
@@ -117,9 +117,9 @@ export default function ProductList() {
 
     return (
         <>
-            <div className="min-h-screen bg-slate-950 p-2 sm:p-3 md:p-4 flex flex-col">
+            <div className="min-h-screen bg-white dark:bg-slate-950 p-2 sm:p-3 md:p-4 flex flex-col">
                 <div className="max-w-7xl xl:max-w-7xl mx-auto grow">
-                    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 sm:mb-6 md:mb-8">
+                    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 md:mb-8">
                         Products
                     </h1>
 
