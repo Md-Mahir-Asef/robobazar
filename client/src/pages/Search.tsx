@@ -154,14 +154,11 @@ export default function Search() {
         if (!query.trim() && category === "All Categories") {
             return (
                 <div className="text-center py-12">
-                    <SearchIcon className="mx-auto h-12 w-12 text-gray-400 mb-4" />
-                    <h2 className="text-2xl font-semibold text-foreground mb-2">
+                    <SearchIcon className="mx-auto h-12 w-12 text-amber-300 mb-4" />
+                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
                         All Products
                     </h2>
-                    <p className="text-muted-foreground">
-                        Browse all available products or use filters to narrow
-                        your search
-                    </p>
+                    <p className="text-gray-600 dark:text-slate-300"></p>
                 </div>
             );
         }
@@ -169,17 +166,14 @@ export default function Search() {
         if (!query.trim() && category !== "All Categories") {
             return (
                 <div className="text-center py-12">
-                    <SearchIcon className="mx-auto h-12 w-12 text-foreground mb-4" />
-                    <h2 className="text-2xl font-semibold text-foreground mb-2">
+                    <SearchIcon className="mx-auto h-12 w-12 text-amber-300 mb-4" />
+                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
                         No products found
                     </h2>
-                    <p className="text-muted-foreground">
+                    <p className="text-gray-600 dark:text-slate-300">
                         No products found in "{category}" category
                     </p>
-                    <p className="text-muted-foreground/70 text-sm mt-2">
-                        Try selecting a different category or adding search
-                        keywords
-                    </p>
+                    <p className="text-gray-500 dark:text-slate-400 text-sm mt-2"></p>
                 </div>
             );
         }
@@ -187,17 +181,17 @@ export default function Search() {
         return (
             <>
                 <div className="text-center py-12">
-                    <SearchIcon className="mx-auto h-12 w-12 text-foreground mb-4" />
-                    <h2 className="text-2xl font-semibold text-foreground mb-2">
+                    <SearchIcon className="mx-auto h-12 w-12 text-amber-300 mb-4" />
+                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
                         No products found
                     </h2>
-                    <p className="text-muted-foreground">
+                    <p className="text-gray-600 dark:text-slate-300">
                         No products found for "{query}"
                         {category !== "All Categories" && (
                             <span> in "{category}" category</span>
                         )}
                     </p>
-                    <p className="text-muted-foreground/70 text-sm mt-2">
+                    <p className="text-gray-500 dark:text-slate-400 text-sm mt-2">
                         Try different keywords or browse categories
                     </p>
                 </div>
@@ -208,12 +202,12 @@ export default function Search() {
     const renderErrorState = () => (
         <div className="text-center py-12">
             <div className="text-red-500 mb-4">
-                <SearchIcon className="mx-auto h-12 w-12" />
+                <SearchIcon className="mx-auto h-12 w-12 text-red-500" />
             </div>
-            <h2 className="text-2xl font-semibold text-foreground mb-2">
+            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
                 Search failed
             </h2>
-            <p className="text-muted-foreground mb-4">{error}</p>
+            <p className="text-gray-600 dark:text-slate-300 mb-4">{error}</p>
             <Button onClick={() => window.location.reload()}>Try again</Button>
         </div>
     );
@@ -221,10 +215,10 @@ export default function Search() {
     return (
         <>
             <Header />
-            <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 w-full dark:bg-gray-900">
+            <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 w-full bg-white dark:bg-slate-950 text-gray-900 dark:text-slate-100">
                 {/* Search Header */}
                 <div className="mb-6 sm:mb-8">
-                    <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 sm:mb-6">
+                    <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
                         Search Products
                     </h1>
 
@@ -262,7 +256,7 @@ export default function Search() {
                         <div className="flex items-center gap-2">
                             <label
                                 htmlFor="sort"
-                                className="text-sm font-medium text-foreground"
+                                className="text-sm font-medium text-gray-700 dark:text-slate-100"
                             >
                                 Sort by:
                             </label>
@@ -303,7 +297,7 @@ export default function Search() {
                         <div className="flex items-center gap-2">
                             <label
                                 htmlFor="limit"
-                                className="text-sm font-medium text-foreground"
+                                className="text-sm font-medium text-gray-700 dark:text-slate-100"
                             >
                                 Show:
                             </label>
@@ -338,7 +332,7 @@ export default function Search() {
                         </div>
 
                         {(query || category !== "All Categories") && (
-                            <div className="text-sm text-muted-foreground">
+                            <div className="text-sm text-gray-500 dark:text-slate-300">
                                 {totalItems}{" "}
                                 {totalItems === 1 ? "product" : "products"}{" "}
                                 found

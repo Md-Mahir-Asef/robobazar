@@ -8,7 +8,7 @@ import { useState } from "react";
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <section className="px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 py-3 sm:py-4 md:py-5 border border-transparent border-b-gray-300 flex flex-row justify-between items-center relative bg-gray-50 dark:bg-gray-900 w-full">
+        <section className="px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 py-3 sm:py-4 md:py-5 border border-transparent border-b-gray-200 dark:border-b-slate-800 flex flex-row justify-between items-center relative bg-white dark:bg-slate-950 w-full">
             <Menu
                 className="flex md:hidden"
                 onClick={() => setIsOpen(!isOpen)}
@@ -25,7 +25,7 @@ export default function Header() {
                     height={32}
                     className="sm:w-10 sm:h-10 md:w-12 md:h-12"
                 />
-                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl pt-2 sm:pt-3 text-[#3BB77E] font-extrabold hidden sm:block">
+                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl pt-2 sm:pt-3 text-amber-300 font-extrabold hidden sm:block">
                     Robobazar
                 </h2>
             </Link>

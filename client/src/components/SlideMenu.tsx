@@ -33,7 +33,7 @@ export default function SlideMenu({
                             width={50}
                             height={50}
                         />
-                        <h2 className="text-2xl pt-3 text-[#3BB77E] font-extrabold">
+                        <h2 className="text-2xl pt-3 text-amber-300 font-extrabold">
                             Robobazar
                         </h2>
                     </Link>
@@ -41,7 +41,7 @@ export default function SlideMenu({
                         <X size={24} />
                     </button>
                 </div>
-                <div className="h-[0.25px] bg-black dark:bg-white" />
+                <div className="h-[0.25px] bg-slate-700 dark:bg-slate-600" />
 
                 {/* Menu Items */}
                 <div className="flex flex-col">
